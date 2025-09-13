@@ -7,7 +7,7 @@ import {
 const GymWorks = () => {
   return (
     <div className="container w-[100%] h-auto flex flex-col items-center justify-center">
-      <div className="gym-detail flex flex-col p-[18px] justify-center items-center">
+      <div className="gym-detail flex flex-col p-[18px] justify-center items-center animate-slideTop">
         <div className="heading">
           <h1
             className="text-white font-bold p-[6px] 
@@ -25,7 +25,7 @@ const GymWorks = () => {
           </span>
         </div>
       </div>
-      <div className="gym-work-detail flex justify-center items-center gap-8 flex-wrap">
+      <div className="gym-work-detail flex justify-center items-center gap-8 flex-wrap animate-slideLeft">
         <div className="gym-work-detail flex justify-center items-center gap-8 flex-wrap min-h-screen">
           {GymWorkDetail.map((items, index) => (
             <div

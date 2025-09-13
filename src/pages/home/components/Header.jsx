@@ -10,7 +10,7 @@ import Selector from "../../../components/select/Selector.jsx";
 
 const Header = () => {
   return (
-    <div className="w-full max-w-7xl mx-auto flex flex-col items-center justify-center text-center gap-4 sm:gap-5 md:gap-6 lg:gap-8 px-3 sm:px-4 md:px-6">
+    <div className="w-full max-w-7xl mx-auto flex flex-col items-center justify-center text-center gap-4 sm:gap-5 md:gap-6 lg:gap-8 px-3 sm:px-4 md:px-6 animate-slideLeft">
       <div className="single-line inline-flex items-center justify-center gap-2 sm:gap-3 text-white text-xs sm:text-sm bg-white/10 backdrop-blur-md px-3 sm:px-4 py-1.5 sm:py-2 rounded-full">
         <img src={logo.StarLogo} alt="StarLogo" />
         <span>{SmallText.SmartFitnessStartsHere}</span>

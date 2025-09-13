@@ -3,7 +3,7 @@ import Button from "../../../components/button/Button";
 
 const DiveWrap = () => {
   return (
-    <div className="container my-[22px]  p-[18px] flex justify-center items-center">
+    <div className="container my-[22px]  p-[18px] flex justify-center items-center animate-slideLeft">
       <div className="background-image rounded-[28px] p-[18px] flex flex-col justify-center items-center gap-[12px] bg-[url('/bg.png')] w-[1280px] h-[439px]">
         <div className="heading">
           <h2 className="text-white text-[22px] sm:text-[28px] md:text-[28px] lg:text-[48px]">

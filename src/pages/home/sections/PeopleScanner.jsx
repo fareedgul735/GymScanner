@@ -7,8 +7,8 @@ import { Images } from "../../../config/Images";
 
 const PeopleScanner = () => {
   return (
-    <div className="container flex flex-col lg:flex-row flex-wrap justify-around items-start gap-4 py-8">
-      <div className="background-image flex justify-start rounded-[32px] items-center bg-[url('/gym_man.jpg')] bg-cover w-full lg:w-[30%] h-[480px] relative">
+    <div className="container p-[18px] flex flex-col lg:flex-row flex-wrap justify-around items-start gap-4 py-8 ">
+      <div className="background-image flex justify-start rounded-[32px] items-center bg-[url('/gym_man.jpg')] bg-cover w-full lg:w-[30%] h-[480px] relative animate-slideLeft">
         <img
           src={Images.Mask}
           alt="Background"
@@ -21,7 +21,7 @@ const PeopleScanner = () => {
   "
         />
       </div>
-      <div className="people-scan-detail w-full lg:w-[38%]  flex flex-col gap-6">
+      <div className="people-scan-detail w-full lg:w-[38%] flex flex-col gap-6 animate-slideRight">
         <div className="heading">
           <h2 className="text-[24px] sm:text-[28px] md:text-[36px] lg:text-[48px] font-bold text-white">
             {Headings.PepoleScannerHeading}

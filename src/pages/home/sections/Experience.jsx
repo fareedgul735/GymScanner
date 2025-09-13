@@ -16,7 +16,7 @@ const GymExperience = () => {
     }
   };
   return (
-    <div className="container lg:p-[38px] md:p-[38px] sm:p-[18px] p-[8px] flex flex-col">
+    <div className="container lg:p-[38px] md:p-[38px] sm:p-[18px] p-[8px] flex flex-col animate-slideLeft">
       <div className="wrap w-[400px] md:w-auto lg:w-auto  flex gap-3 px-10 py-8 items-end justify-between">
         <div className="text md:text-left">
           <h1
