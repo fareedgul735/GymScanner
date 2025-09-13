@@ -7,11 +7,19 @@ body {
   font-family: "Space Grotesk", sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 :root {
   --scrollbar-thumb: #facc15;
   --scrollbar-thumb-hover: #eab308;
   --scrollbar-track: transparent;
+  --drawer-bg: rgba(255, 255, 255, 0.08);
+  --drawer-header-bg: rgba(255, 255, 255, 0.05);
+  --drawer-border: rgba(255, 255, 255, 0.2);
+  --drawer-text: #ffffff;
+  --drawer-hover: #ffd700;
+  --drawer-close-hover: #ff4d4f;
+  --body: rgba(255, 255, 255, 0.1);
 }
 
 ::-webkit-scrollbar {
@@ -39,4 +47,51 @@ body {
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.custom-ant-drawer .ant-drawer-content {
+  background: var(--drawer-bg) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-right: 1px solid var(--drawer-border);
+  color: var(--drawer-text);
+}
+
+.custom-ant-drawer .ant-drawer-header {
+  background: var(--drawer-header-bg) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid var(--drawer-border);
+  color: var(--drawer-text);
+}
+
+.custom-ant-drawer .ant-drawer-body {
+  background: transparent !important;
+  color: var(--drawer-text);
+  padding: 20px;
+}
+
+.custom-ant-drawer .ant-drawer-title {
+  color: var(--drawer-text) !important;
+}
+
+.custom-ant-drawer .ant-drawer-close {
+  color: var(--drawer-text);
+  transition: color 0.3s ease;
+}
+
+.custom-ant-drawer .ant-drawer-close:hover {
+  color: var(--drawer-close-hover);
+}
+
+.custom-ant-drawer .ant-drawer-body span {
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
+  display: block;
+}
+
+.custom-ant-drawer .ant-drawer-body span:hover {
+  color: var(--drawer-hover);
+  background: var(--body);
 }

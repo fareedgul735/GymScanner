@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Descriptions } from "./assets/labels/labels";
 
 const NetworkStatus = () => {
   const [isOnline, setIsOnline] = useState(navigator.onLine);
@@ -18,14 +19,18 @@ const NetworkStatus = () => {
 
   if (!isOnline) {
     return (
-      <div className={style.overlay}>
-        <div className={style.icon}>
-          <div></div>
-          <div></div>
-          <div></div>
+      <div
+        className="fixed inset-0 flex flex-col items-center justify-center 
+        bg-black/60 backdrop-blur-md z-[9999] text-center gap-8 px-6"
+      >
+        <div className="relative flex items-center justify-center">
+          <div className="absolute w-24 h-24 rounded-full border-4 border-red-500 opacity-20 animate-ping"></div>
+          <div className="absolute w-16 h-16 rounded-full border-4 border-red-500 opacity-40 animate-pulse"></div>
+          <div className="w-10 h-10 rounded-full bg-red-600 shadow-lg shadow-red-900"></div>
         </div>
-        <p className={style.text}>
-          You are offline. Please check your connection.
+
+        <p className="text-red-400 text-2xl font-bold tracking-wide animate-pulse drop-shadow-md">
+          {Descriptions.InternetIssue || "No Internet Connection"}
         </p>
       </div>
     );

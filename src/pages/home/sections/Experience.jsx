@@ -7,7 +7,7 @@ const GymExperience = () => {
 
   const scroollerFun = (direction) => {
     if (scrollRef.current) {
-      const cardWidth = 320;
+      const cardWidth = 300;
       if (direction === "left") {
         scrollRef.current.scrollLeft -= cardWidth;
       } else {
@@ -16,13 +16,16 @@ const GymExperience = () => {
     }
   };
   return (
-    <div className="container p-[38px] flex flex-col">
-      <div className="wrap flex gap-3 px-10 py-8 items-end justify-between">
-        <div className="text">
-          <h1 className="text-4xl md:text-5xl text-white font-bold">
+    <div className="container lg:p-[38px] md:p-[38px] sm:p-[18px] p-[8px] flex flex-col">
+      <div className="wrap w-[400px] md:w-auto lg:w-auto  flex gap-3 px-10 py-8 items-end justify-between">
+        <div className="text md:text-left">
+          <h1
+            className="text-[22px] sm:text-[24px] md:text-2xl lg:text-4xl 
+               text-white font-bold"
+          >
             {Headings.ExpeHead}
           </h1>
-          <small className="text-lg text-gray-400">
+          <small className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-400">
             {Descriptions.ExpeDesc}
           </small>
         </div>

@@ -36,6 +36,7 @@ export const Descriptions = {
   DiveDes: "Sign Up, select your desired challenge account and Get Fundded",
   ExpeDesc:
     "Hear from travelers and trainers using Gymscanner around the world",
+  InternetIssue: "You are offline. Please check your connection.",
 };
 
 export const NavbarItems = [
@@ -169,5 +170,4 @@ export const Cards = [
     rating_point: "11.2",
     desc: "Perfect for digital nomads like me. Great selection of gyms around the world.",
   },
-  
 ];
